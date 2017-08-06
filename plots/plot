@@ -1,7 +1,7 @@
 set term png
 #set output "p.png"
-set output "r.png"
-#set output "i.png"
+#set output "r.png"
+set output "i.png"
 set boxwidth 0.5
 set style fill solid
 set mytics 10 
@@ -10,9 +10,9 @@ set mytics 5
 set yrange [0:7]
 set grid
 #set title "Честота на буквите в романа Под игото от Иван Вазов"
-set title "Честота на буквите в повестта Трима с магаре из Рила от Асен Г. Христофоров"
-#set title "Честота на буквите в романа Идиот от Фьодор Достоевски"
+#set title "Честота на буквите в повестта Трима с магаре из Рила от Асен Г. Христофоров"
+set title "Честота на буквите в романа Идиот от Фьодор Достоевски"
 set nokey
 #plot "letters_p" using 1:4:xtic(2) with boxes
-plot "letters_r" using 1:4:xtic(2) with boxes
-#plot "letters_i" using 1:4:xtic(2) with boxes
+#plot "letters_r" using 1:4:xtic(2) with boxes
+plot "letters_i" using 1:4:xtic(2) with boxes
