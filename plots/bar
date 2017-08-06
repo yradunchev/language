@@ -1,0 +1,13 @@
+set term png
+set output "ip.png"
+set grid
+set ytics 0.5
+set mytics 5
+set style data histogram
+set style histogram cluster gap 2
+set xtics rotate out
+set title "Честота на буквите в българския и руския\n(Под игото от Вазов vs Идиот от Достоевски)"
+set style fill solid border rgb "black"
+set auto x
+set yrange [0:7]
+plot 'letters_p_i' using 3:xtic(2) title col linecolor rgb "#00FF00",'' using 4:xtic(2) title col linecolor rgb "#FF0000"
